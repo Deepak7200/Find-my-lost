@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #7371ed;
+    font-family: Arial, sans-serif;
+    background-size: cover; /* This will scale the background image to cover the entire container */
+    background-position: center; /* This will center the background image */
+    background-repeat: no-repeat;
+    
+}
+/* Header styling */
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Logo styling */
+.logo {
+    width: 65px;
+    height: 65px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.buttons a{
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    background-color: #7371ed;
+    color: black;
+    padding: 8px 20px;
+    /* margin-left: -10px; */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* To remove underline if used as link */
+}
+.button:hover {
+    background-color: #5a58f0;
+}
+/* Image styling */
+.button img {
+    width: 35px; /* Adjust width as needed */
+    height: auto;
+    vertical-align: middle; /* Align image vertically */
+    margin-left: -15px;
+    margin-right: -3px; /* Space between image and text */
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+.text-button{
+    margin: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.b-buttons{
+    margin-top: 50px;
+    text-align: center;
+    /* margin-left: 40px; */
+    /* background-color: #bfc0df; */
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+}
+.left-b{
+    margin-right: 100px;
+    font-weight: bold;
+    background-color: #bfc0df;
+    color: black;
+    padding: 8px 20px;
+    text-decoration:none;
+    border-radius: 10px;
+}
+.left-b:hover{
+    background-color: #a1a3bb;
+}
+.right-b{
+    background-color: #bfc0df;
+    font-weight: bold;
+    color: black;
+    padding: 8px 20px;
+    text-decoration:none;
+    border-radius: 10px;
+}
+.right-b:hover{
+    background-color: #a1a3bb;
+}

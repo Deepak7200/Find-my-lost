@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  background-size: cover; /* This will scale the background image to cover the entire container */
+  background-position: center; /* This will center the background image */
+  background-repeat: no-repeat;
+  
+}
+/* Header styling */
+header {
+  background-color: #fff;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Logo styling */
+.logo {
+  width: 65px;
+  height: 65px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+.buttons a{
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  background-color: #7371ed;
+  color: black;
+  padding: 8px 20px;
+  /* margin-left: -10px; */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* To remove underline if used as link */
+}
+.button:hover {
+  background-color: #5a58f0;
+}
+/* Image styling */
+.button img {
+  width: 35px; /* Adjust width as needed */
+  height: auto;
+  vertical-align: middle; /* Align image vertically */
+  margin-left: -15px;
+  margin-right: -3px; /* Space between image and text */
+  margin-top: -3px;
+  margin-bottom: -3px;
+}
+
+.main-container {
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  padding: 10px;
+  width: 600px; /* Adjust width as needed */
+  height: 80%;
+  margin: 0 auto; /* Centers the container */
+  margin-top: 30px;
+  background-color: #7371ed;
+}
+
+/* Style for the container on the left side */
+.left-container {
+  flex: 1; /* Takes up remaining space */
+  padding: 10px;
+  background-color: rgb(189, 188, 247);
+  border-radius: 20px;
+}
+
+/* Style for the container on the right side */
+.right-container {
+  flex: 1; /* Takes up remaining space */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for input fields */
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: calc(100% - 16px); /* Adjust width as needed */
+}
+
+.input-with-icon {
+  /* background-color: rgb(133, 129, 129); */
+  /* border-radius: 25%; */
+  margin-left: 40px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.input-with-icon input[type="text"] {
+  width: 170px;
+  padding-right: 30px; /* Adjust as needed */
+}
+
+.input-with-icon img {
+  margin-top: -5px;
+  text-align: center;
+  margin-right: 33px;
+  position: absolute;
+  right: 5px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px; /* Adjust as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.right-container p{
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+.input-with-icon input[type="text"] {
+  background-color: rgb(186, 186, 223);
+}
+
+.input-with-icon input[type="text"]::placeholder {
+  color: black; /* Change "yourDesiredColor" to the color you want */
+}
+
+.create-button {
+  background-color: #ffffff;
+  color: black;
+  padding: 5px 20px;
+  margin-right: 30px;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* To remove underline if used as link */
+  font-weight: normal!important;
+  float: right;
+}
+.create-button:hover {
+  background-color: #e5e5e5;
+}
+

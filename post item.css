@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #7371ed;
+    font-family: Arial, sans-serif;
+    background-size: cover; /* This will scale the background image to cover the entire container */
+    background-position: center; /* This will center the background image */
+    background-repeat: no-repeat;
+    
+}
+/* Header styling */
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Logo styling */
+.logo {
+    width: 65px;
+    height: 65px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.buttons a{
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    background-color: #7371ed;
+    color: black;
+    padding: 8px 20px;
+    /* margin-left: -10px; */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* To remove underline if used as link */
+}
+.button:hover {
+    background-color: #5a58f0;
+}
+/* Image styling */
+.button img {
+    width: 35px; /* Adjust width as needed */
+    height: auto;
+    vertical-align: middle; /* Align image vertically */
+    margin-left: -15px;
+    margin-right: -3px; /* Space between image and text */
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+.text-button{
+    margin: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(125, 216, 252, 0.637);
+} */
+
+.container {
+    border-radius: 10px;
+    max-width: 350px;
+    margin: 2em auto;
+    padding: 0 2em;
+    background-color: white;
+}
+
+.container input{
+    background-color: rgba(184,184,246,255);
+}
+
+#cardText {
+    text-align: center;
+    padding-top: 10px;
+}
+
+form {
+    margin-bottom: 1em;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border: none; 
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: #5a58f0;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7371ed;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-left: 10px;
+}
+
+.card {
+    background-color: white;
+    width: 270px;
+    height: 380px;
+    /* width: calc(33% - 1em); Adjust card width to fit 3 cards in a row */
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    padding: 1em;
+    /* margin-bottom: 1em; */
+    /* float: left; */
+    margin-right: 20px; /* Horizontal space between cards */
+    margin-bottom: 20px;
+}
+
+.card img {
+    border-radius: 10px;
+    width: 270px;
+    height: 170px;
+    /* max-height: 1350px; */
+    object-fit: cover;
+    /* margin: 10px; */
+    padding-bottom: 10px;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-text {
+    text-align: left;
+}
+
+.card-text h2, p {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+
+.card.left-aligned {
+    float: left; /* Ensure the card is aligned to the left */
+}
+
+#button{
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 140px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#titleInput{
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#dateInput{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#wordCounter{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.card-container{
+    display: block;
+}
+
+#contentInput{
+    border-radius: 10px;
+    background-color: rgba(184,184,246,255);
+}
+
+#imageInput{
+    background-color: white;
+}
+
+#cardForm, label p{
+    font-weight: bold;
+}
+
+#wordCounter{
+    font-weight: normal!important;
+}
+
+#type{
+    margin-bottom: 9px;
+    background-color: rgba(184,184,246,255);
+    border-radius: 5px;
+    /* font-weight: bold; */
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.date{
+    display: flex;
+}

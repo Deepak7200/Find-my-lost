@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Item</title>
+    <link rel="stylesheet" href="post item.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Left side: Logo -->
+        <div class="logo">
+            <img src="img/indmylst-removebg-preview-1.png" width="auto" height="120px" alt="Logo">
+        </div>
+        <div class="text-buttons">
+            <a href="home.html" class="text-button" style="text-decoration:none"> Home </a>
+            <a href="#" class="text-button"  style="text-decoration:none"> Post-item </a>
+            <a href="my listing.html" class="text-button"  style="text-decoration:none"> My listing </a>
+            <a href="response.html" class="text-button"  style="text-decoration:none"> Response </a>
+        </div>
+        <!-- Right side: Buttons -->
+        <div class="buttons">
+            <a href="#" class="button"> <img src="img/exit.png" alt="Image"> Log-out </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 id="cardText">Post item</h2>
+        <!-- <h3 id="cardText">Post Items</h3> -->
+        <form id="cardForm">
+            <p>Item Name*</p>
+            <input type="text" autocomplete="off" id="titleInput" >
+            <p class="inputText">Description*</p>
+            <textarea id="contentInput" rows="4" cols="25" ></textarea>
+            <p id="wordCounter">Words remaining: <span id="wordCount">25</span></p>
+
+            <p class="inputText">Question*</p>
+            <input type="text" autocomplete="off" id="titleInput" >
+
+            <label class="item-type">Item type*</label>
+                <select id="type" name="type">
+                    <option value="Lost">Lost</option>
+                    <option value="Found">Found</option>
+                </select>
+
+                <div class="date">
+                    <p>Date of the lost/found item* &ensp;</p>
+                    <input type="date" id="dateInput">
+                </div>
+                
+            
+            
+            <p>Image input*</p>
+            <input type="file"  id="imageInput" accept="image/*">
+
+            <button id="button" type="submit">Submit</button>
+        </form>
+        
+    </div>
+    <div id="cardContainer" class="card-container" data-url="checkout.html"></div>
+    <!-- <a href="card.html">
+        <button class="button">Go to Example</button>
+      </a> -->
+    <script src="post item.js"></script>
+
+    <script>
+        var textarea = document.getElementById('contentInput');
+        var wordCountDisplay = document.getElementById('wordCount');
+        var maxWords = 25;
+
+        textarea.addEventListener('input', function() {
+            var words = this.value.split(' ');
+            if (words.length > maxWords) {
+                words.splice(maxWords);
+                this.value = words.join(' ');
+            }
+            wordCountDisplay.textContent = maxWords - words.length;
+        });
+
+
+        // Get the clickable container by its ID
+        const clickableDiv = document.getElementById("cardContainer");
+
+        // Add a click event listener to the container
+        clickableDiv.addEventListener("click", () => {
+            // Get the URL from the data attribute
+            const targetUrl = clickableDiv.getAttribute("data-url");
+            // Redirect to the target URL
+            window.location.href = targetUrl;
+        });
+    </script>
+        
+</body>
+</html>

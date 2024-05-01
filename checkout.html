@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Left side: Logo -->
+        <div class="logo">
+            <img src="img/indmylst-removebg-preview-1.png" width="auto" height="120px" alt="Logo">
+        </div>
+        <div class="text-buttons">
+            <a href="home.html" class="text-button" style="text-decoration:none"> Home </a>
+            <a href="post item.html" class="text-button"  style="text-decoration:none"> Post-item </a>
+            <a href="my listing.html" class="text-button"  style="text-decoration:none"> My listing </a>
+            <a href="response.html" class="text-button"  style="text-decoration:none"> Response </a>
+        </div>
+        <!-- Right side: Buttons -->
+        <div class="buttons">
+            <a href="entry.html" class="button"> <img src="img/exit.png" alt="Image"> Log-out </a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="left-container">
+          <!-- Content for left container -->
+            <img src="img/founditem11.jpg" alt="" height="280px">
+        </div>
+        <div class="right-container">
+          <!-- Content for right container -->
+          <!-- <p>Create an account</p> -->
+
+          <div class="input-with-icon">
+            <input type="text" placeholder="Item name: iPhone 13 pro">
+          </div>
+          <div class="input-with-icon">
+            <input type="text" placeholder="Item description: Found in A4 room-906">
+          </div>
+          <div class="input-with-icon">
+            <input type="text" placeholder="Item type: Found">
+          </div>
+          <div class="input-with-icon">
+            <input type="text" placeholder="List at: 12/1/2024     11:25">
+          </div>
+
+          <!-- <div class="buttons">
+            <a href="#" class="create-button"> Found Item </a>
+          </div> -->
+
+          <div class="sbutton1">
+            <button onclick="openFeedback()">Claim</button>
+         </div>
+
+         
+
+        </div>
+      </div>
+
+      <!-- Feedback container -->
+    <div class="feedback-container" id="feedbackContainer">
+        <!-- Feedback form -->
+        <div class="feedback-form">
+            <p class="question">What is the position of the scratch?</p>
+            <textarea id="feedbackTextarea" placeholder="Write your answer here..."></textarea>
+            <div class="button-container">
+                <button class="submit-button" onclick="submitFeedback()">Submit</button>
+                <button class="close-button" onclick="closeFeedback()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to open the feedback form
+        function openFeedback() {
+            document.getElementById("feedbackContainer").style.display = "block";
+        }
+
+        // Function to close the feedback form
+        function closeFeedback() {
+            document.getElementById("feedbackContainer").style.display = "none";
+        }
+
+        // Function to submit the feedback
+        function submitFeedback() {
+            var feedback = document.getElementById("feedbackTextarea").value;
+            // Process the feedback here (e.g., send it to the server)
+            console.log("Feedback:", feedback);
+            // Close the feedback form
+            closeFeedback();
+        }
+    </script>
+        
+</body>
+</html>
